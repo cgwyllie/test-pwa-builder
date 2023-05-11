@@ -38,6 +38,11 @@
 
   <script type="module" src="/src/app-index.ts"></script>
   <script async src="https://sdk.optimove.net/websdk/?tenant_id=593" data-optimove-service-worker-path="/sw.js"></script>
+  <script>
+    setTimeout(function () {
+      window.optimoveSDK.API.pushRegister();
+    }, 1000);
+  </script>
 </head>
 
 <body>
