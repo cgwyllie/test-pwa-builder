@@ -76,7 +76,7 @@ export class AppHome extends LitElement {
   }
 
   _clicky() {
-    window.optimoveSDK.API.pushRegister();
+    (window as any).optimoveSDK.API.pushRegister();
   }
 
   render() {
